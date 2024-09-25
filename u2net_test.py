@@ -57,7 +57,7 @@ def test(load_model_path: str, threshold: float = 0.5):
         assert os.path.exists(label_path), f"{label_path}不存在"
         itk_label = sitk.ReadImage(label_path)
         label = sitk.GetArrayFromImage(itk_label)
-        label[label > 0] = 1  # 本身有两个类别1和2，但只分割肝脏
+        label[label > 0] = 1  # 本身有两个类别1和2，但只分割病灶
         print("label shape:", label.shape)
 
         # 每一层进行预测
