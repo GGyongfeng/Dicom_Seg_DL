@@ -1,0 +1,16 @@
+# Ignore files inside dataset directories, but keep the directories
+dataset/original/*
+data/train/*
+data/validate/*
+
+# Allow .gitkeep files to track the folders
+!dataset/original/.gitkeep
+!data/train/.gitkeep
+!data/validate/.gitkeep
+
+# Ignore virtual environment
+.venv/
+
+# Ignore Python cache directories
+__pycache__/
+tools/__pycache__/
