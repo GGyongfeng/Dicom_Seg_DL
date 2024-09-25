@@ -1,10 +1,16 @@
 # Ignore files inside dataset directories, but keep the directories
 dataset/original/*
+dataset/test/*
+dataset/train/*
+dataset/validate/*
 data/train/*
 data/validate/*
 
 # Allow .gitkeep files to track the folders
 !dataset/original/.gitkeep
+!dataset/test/.gitkeep
+!dataset/train/.gitkeep
+!dataset/validate/.gitkeep
 !data/train/.gitkeep
 !data/validate/.gitkeep
 
